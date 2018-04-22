@@ -13,8 +13,7 @@ import com.qima.o2o.entity.Shop;
 import com.qima.o2o.util.HttpServletRequestUtil;
 
 @Controller
-@RequestMapping(value = "shop", method = { RequestMethod.GET,
-		RequestMethod.POST })
+@RequestMapping(value = "shop", method = { RequestMethod.GET,RequestMethod.POST })
 public class AdminController {
 	@RequestMapping(value = "/test")
 	public Map<String, Object> productcategory(HttpServletRequest request) {

@@ -13,11 +13,15 @@ import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistration;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import com.google.code.kaptcha.servlet.KaptchaServlet;
+import com.qima.o2o.interceptor.shop.ShopLoginInterceptor;
+import com.qima.o2o.interceptor.shop.ShopPermissionInterceptor;
 
 @Configuration
 // 等价于<mvc:annotation-driven/>
@@ -34,6 +38,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter implements Applica
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		// registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/resources/");
+		registry.addResourceHandler("/upload/**").addResourceLocations("file:/User/baidu/work/image/upload/");
 	}
 
 	@Override
@@ -53,6 +58,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter implements Applica
 		return viewResolver;
 	}
 
+	@Bean(name="multipartResolver")
 	public CommonsMultipartResolver createMultipartResolver() {
 		CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
 		multipartResolver.setDefaultEncoding("utf-8");
@@ -93,6 +99,31 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter implements Applica
 		servlet.addInitParameter("kaptcha.textproducer.char.length", clenth);
 		servlet.addInitParameter("kaptcha.textproducer.font.names", fnames);
 		return servlet;
+	}
+	
+	@Override
+	public void addInterceptors(InterceptorRegistry registry) {
+		String interceptPath="/shop/**";
+		InterceptorRegistration loginIR = registry.addInterceptor(new ShopLoginInterceptor());
+		loginIR.addPathPatterns(interceptPath);
+		InterceptorRegistration permissionIR = registry.addInterceptor(new ShopPermissionInterceptor());
+		permissionIR.addPathPatterns(interceptPath);
+		
+		/** 配置不拦截的路径**/
+		//shoplist page
+		permissionIR.excludePathPatterns("/shop/list");
+		//permissionIR.excludePathPatterns("");
+		
+		//shopregister page
+		permissionIR.excludePathPatterns("/shop/registershop");
+		permissionIR.excludePathPatterns("");
+		permissionIR.excludePathPatterns("");
+		
+		//shopmanage page
+		permissionIR.excludePathPatterns("");
+		permissionIR.excludePathPatterns("");
+		
+		permissionIR.excludePathPatterns("/superadmin/login");
 	}
 
 }

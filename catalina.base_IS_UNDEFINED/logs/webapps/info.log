@@ -14,3 +14,9 @@
 2018-04-23 05:23:47.794 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 108948 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
 2018-04-23 05:23:47.796 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
 2018-04-23 05:23:51.221 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 3.64 seconds (JVM running for 4.632)
+2018-04-23 06:07:55.882 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 119280 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-23 06:07:55.884 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-04-23 06:07:59.221 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 3.548 seconds (JVM running for 5.178)
+2018-04-23 06:21:47.284 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 124680 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-23 06:21:47.287 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-04-23 06:21:51.287 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 4.223 seconds (JVM running for 5.273)
