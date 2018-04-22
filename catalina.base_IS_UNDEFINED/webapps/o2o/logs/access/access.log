@@ -1,0 +1,384 @@
+2018-04-22 07:58:24.328 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 110776 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 07:58:24.329 [main] DEBUG com.qima.o2o.dao.AreaDaoTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 07:58:24.330 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 07:58:29.145 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Started AreaDaoTest in 5.125 seconds (JVM running for 7.324)
+2018-04-22 08:01:18.415 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 109936 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 08:01:18.416 [main] DEBUG com.qima.o2o.dao.AreaDaoTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 08:01:18.416 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 08:01:24.146 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Started AreaDaoTest in 6.022 seconds (JVM running for 7.163)
+2018-04-22 08:03:07.673 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 105016 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 08:03:07.673 [main] DEBUG com.qima.o2o.dao.AreaDaoTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 08:03:07.675 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 08:03:13.275 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Started AreaDaoTest in 5.927 seconds (JVM running for 7.012)
+2018-04-22 11:24:54.460 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Starting AreaServiceTest on DESKTOP-HQB24R0 with PID 100676 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 11:24:54.460 [main] DEBUG com.qima.o2o.service.AreaServiceTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 11:24:54.460 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 11:25:01.744 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Started AreaServiceTest in 7.599 seconds (JVM running for 8.753)
+2018-04-22 11:26:11.230 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Starting AreaServiceTest on DESKTOP-HQB24R0 with PID 110188 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 11:26:11.230 [main] DEBUG com.qima.o2o.service.AreaServiceTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 11:26:11.230 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 11:26:18.088 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Started AreaServiceTest in 7.174 seconds (JVM running for 8.678)
+2018-04-22 11:27:03.029 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Starting AreaServiceTest on DESKTOP-HQB24R0 with PID 117256 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 11:27:03.030 [main] DEBUG com.qima.o2o.service.AreaServiceTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 11:27:03.030 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 11:27:09.297 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Started AreaServiceTest in 6.612 seconds (JVM running for 7.727)
+2018-04-22 11:29:17.071 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Starting AreaServiceTest on DESKTOP-HQB24R0 with PID 117512 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 11:29:17.071 [main] DEBUG com.qima.o2o.service.AreaServiceTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 11:29:17.072 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 11:29:23.996 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Started AreaServiceTest in 7.249 seconds (JVM running for 9.298)
+2018-04-22 17:14:29.411 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 104236 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 17:14:29.432 [main] DEBUG com.qima.o2o.dao.AreaDaoTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 17:14:29.432 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 17:14:38.282 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Started AreaDaoTest in 9.761 seconds (JVM running for 12.278)
+2018-04-22 17:15:32.128 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 116540 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 17:15:32.129 [main] DEBUG com.qima.o2o.dao.AreaDaoTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 17:15:32.129 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 17:15:38.236 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Started AreaDaoTest in 6.409 seconds (JVM running for 7.485)
+2018-04-22 17:16:02.697 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Starting AreaServiceTest on DESKTOP-HQB24R0 with PID 116160 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 17:16:02.698 [main] DEBUG com.qima.o2o.service.AreaServiceTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 17:16:02.699 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 17:16:08.360 [main] INFO  com.qima.o2o.service.AreaServiceTest -
+				Started AreaServiceTest in 5.951 seconds (JVM running for 7.026)
+2018-04-22 18:07:50.991 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 98352 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:07:50.993 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:07:50.993 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:07:54.185 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.384 seconds (JVM running for 4.518)
+2018-04-22 18:09:57.870 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 114380 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:09:57.901 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:09:57.902 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:10:02.115 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.473 seconds (JVM running for 7.821)
+2018-04-22 18:14:31.758 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 113512 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:14:31.761 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:14:31.761 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:14:38.715 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 7.269 seconds (JVM running for 8.204)
+2018-04-22 18:16:34.984 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 98388 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:16:34.985 [main] DEBUG com.qima.o2o.dao.AreaDaoTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:16:34.985 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:16:40.532 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Started AreaDaoTest in 5.864 seconds (JVM running for 7.214)
+2018-04-22 18:17:15.104 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 61732 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:17:15.106 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:17:15.107 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:17:18.723 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.798 seconds (JVM running for 4.786)
+2018-04-22 18:17:48.208 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 79508 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:17:48.210 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:17:48.210 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:17:51.475 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.443 seconds (JVM running for 4.495)
+2018-04-22 18:20:49.224 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 89948 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:20:49.226 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:20:49.227 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:20:52.219 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.178 seconds (JVM running for 4.68)
+2018-04-22 18:22:34.451 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 115372 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:22:34.452 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:22:34.453 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:22:38.140 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.87 seconds (JVM running for 4.891)
+2018-04-22 18:26:21.230 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 105224 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:26:21.235 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:26:21.235 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:26:28.829 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 8.166 seconds (JVM running for 10.258)
+2018-04-22 18:27:41.026 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 109556 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:27:41.028 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:27:41.028 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:27:44.056 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.211 seconds (JVM running for 4.206)
+2018-04-22 18:29:47.474 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 116612 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:29:47.479 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:29:47.480 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:29:56.803 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 9.547 seconds (JVM running for 35.756)
+2018-04-22 18:33:37.108 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 112920 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:33:37.110 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:33:37.110 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:33:40.453 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.575 seconds (JVM running for 4.572)
+2018-04-22 18:40:34.333 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 115732 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:40:34.335 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:40:34.335 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:40:37.755 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.619 seconds (JVM running for 4.654)
+2018-04-22 18:41:13.318 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 110836 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:41:13.324 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:41:13.330 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:41:16.966 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.96 seconds (JVM running for 5.04)
+2018-04-22 18:42:15.215 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 84488 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:42:15.216 [main] DEBUG com.qima.o2o.dao.AreaDaoTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:42:15.217 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:42:21.127 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Started AreaDaoTest in 6.217 seconds (JVM running for 7.249)
+2018-04-22 18:43:36.649 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 104064 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:43:36.651 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:43:36.651 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:43:39.810 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.382 seconds (JVM running for 4.379)
+2018-04-22 18:44:59.575 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 117392 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:44:59.578 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:44:59.578 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:45:03.189 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.826 seconds (JVM running for 4.843)
+2018-04-22 18:50:37.348 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 118068 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:50:37.353 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:50:37.354 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:50:41.223 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.082 seconds (JVM running for 5.956)
+2018-04-22 18:54:28.846 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 113048 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 18:54:28.848 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 18:54:28.848 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 18:54:32.041 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.431 seconds (JVM running for 5.016)
+2018-04-22 19:11:06.913 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 94660 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 19:11:06.922 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 19:11:06.922 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 19:11:10.091 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.389 seconds (JVM running for 4.509)
+2018-04-22 19:28:46.501 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 111224 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 19:28:46.505 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-04-22 19:28:46.508 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 19:28:50.088 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.04 seconds (JVM running for 5.225)
+2018-04-22 19:32:38.002 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 115732 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 19:32:38.005 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-04-22 19:32:38.006 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 19:32:41.796 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.045 seconds (JVM running for 5.159)
+2018-04-22 19:33:54.214 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 112708 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 19:33:54.216 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-04-22 19:33:54.217 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 19:33:58.002 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.052 seconds (JVM running for 5.129)
+2018-04-22 19:35:55.271 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 104104 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 19:35:55.273 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-04-22 19:35:55.275 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 19:35:59.121 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.096 seconds (JVM running for 5.183)
+2018-04-22 19:39:54.553 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 101320 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 19:39:54.557 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 19:39:54.558 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 19:39:58.012 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.845 seconds (JVM running for 5.123)
+2018-04-22 19:50:43.998 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 112252 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 19:50:44.000 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 19:50:44.001 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 19:50:48.219 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.6 seconds (JVM running for 5.87)
+2018-04-22 19:55:10.433 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 115292 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 19:55:10.435 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 19:55:10.435 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 19:55:13.789 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.567 seconds (JVM running for 4.838)
+2018-04-22 19:59:33.485 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 113344 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 19:59:33.487 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 19:59:33.487 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 19:59:37.678 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.387 seconds (JVM running for 5.451)
+2018-04-22 20:07:01.580 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 114052 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 20:07:01.581 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 20:07:01.581 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 20:07:05.189 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.837 seconds (JVM running for 4.884)
+2018-04-22 20:10:17.320 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 106460 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 20:10:17.321 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 20:10:17.321 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 20:10:21.653 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.558 seconds (JVM running for 5.554)
+2018-04-22 20:11:07.971 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 102820 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 20:11:07.971 [main] DEBUG com.qima.o2o.dao.AreaDaoTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 20:11:07.979 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 20:11:14.747 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Started AreaDaoTest in 7.154 seconds (JVM running for 8.117)
+2018-04-22 20:11:39.420 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 112260 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 20:11:39.420 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 20:11:39.420 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 20:11:43.530 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.296 seconds (JVM running for 5.373)
+2018-04-22 20:12:17.168 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 117504 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 20:12:17.168 [main] DEBUG com.qima.o2o.dao.AreaDaoTest -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 20:12:17.169 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				No active profile set, falling back to default profiles: default
+2018-04-22 20:12:24.234 [main] INFO  com.qima.o2o.dao.AreaDaoTest -
+				Started AreaDaoTest in 7.398 seconds (JVM running for 8.551)
+2018-04-22 20:17:47.071 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 112508 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 20:17:47.071 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 20:17:47.072 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 20:17:51.172 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.301 seconds (JVM running for 5.367)
+2018-04-22 21:06:08.149 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 118932 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 21:06:08.149 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 21:06:08.152 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 21:10:55.510 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 287.628 seconds (JVM running for 289.012)
+2018-04-22 21:13:17.737 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 117524 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 21:13:17.737 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 21:13:17.737 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 21:13:22.446 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 4.922 seconds (JVM running for 6.088)
+2018-04-22 21:30:59.293 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 117908 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 21:30:59.293 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 21:30:59.296 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 21:35:19.276 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 260.281 seconds (JVM running for 261.491)
+2018-04-22 21:37:10.735 [main] INFO  com.qima.o2o.O2oApplication -
+				Starting O2oApplication on DESKTOP-HQB24R0 with PID 99964 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
+2018-04-22 21:37:10.735 [main] DEBUG com.qima.o2o.O2oApplication -
+				Running with Spring Boot v1.5.12.RELEASE, Spring v4.3.16.RELEASE
+2018-04-22 21:37:10.735 [main] INFO  com.qima.o2o.O2oApplication -
+				No active profile set, falling back to default profiles: default
+2018-04-22 21:37:14.474 [main] INFO  com.qima.o2o.O2oApplication -
+				Started O2oApplication in 3.962 seconds (JVM running for 4.94)
