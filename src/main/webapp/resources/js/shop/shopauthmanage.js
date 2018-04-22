@@ -1,7 +1,7 @@
 $(function() {
     var shopId = 1;
-    var listUrl = '/myo2o/shop/listshopauthmapsbyshop?pageIndex=1&pageSize=9999&shopId=' + shopId;
-    var deleteUrl = '/myo2o/shop/removeshopauthmap';
+    var listUrl = '/o2o/shop/listshopauthmapsbyshop?pageIndex=1&pageSize=9999&shopId=' + shopId;
+    var deleteUrl = '/o2o/shop/removeshopauthmap';
 
     function getList() {
         $.getJSON(listUrl, function (data) {
@@ -50,13 +50,13 @@ $(function() {
     $('.shopauth-wrap').on('click', 'a', function (e) {
         var target = $(e.currentTarget);
         if (target.hasClass('edit')) {
-            window.location.href = '/myo2o/shop/shopauthedit?shopauthId=' + e.currentTarget.dataset.authId;
+            window.location.href = '/o2o/shop/shopauthedit?shopauthId=' + e.currentTarget.dataset.authId;
         } else if (target.hasClass('delete')) {
             deleteItem(e.currentTarget.dataset.authId);
         }
     });
 
     // $('#new').click(function () {
-    //     window.location.href = '/myo2o/shop/shopauthedit';
+    //     window.location.href = '/o2o/shop/shopauthedit';
     // });
 });

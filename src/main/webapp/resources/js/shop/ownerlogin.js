@@ -1,5 +1,5 @@
 $(function() {
-	var loginUrl = '/myo2o/shop/ownerlogincheck';
+	var loginUrl = '/o2o/shop/ownerlogincheck';
 	var loginCount = 0;
 
 	$('#submit').click(function() {
@@ -30,7 +30,7 @@ $(function() {
 			success : function(data) {
 				if (data.success) {
 					$.toast('登录成功！');
-					window.location.href = '/myo2o/shop/shoplist';
+					window.location.href = '/o2o/shop/shoplist';
 				} else {
 					$.toast('登录失败！');
 					loginCount++;
@@ -43,6 +43,6 @@ $(function() {
 	});
 
 	$('#register').click(function() {
-		window.location.href = '/myo2o/shop/register';
+		window.location.href = '/o2o/shop/register';
 	});
 });

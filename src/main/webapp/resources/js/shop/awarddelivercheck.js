@@ -3,7 +3,7 @@ $(function() {
 	var awardName = '';
 
 	function getList() {
-		var listUrl = '/myo2o/shop/listuserawardmapsbyshop?pageIndex=1&pageSize=9999&shopId='
+		var listUrl = '/o2o/shop/listuserawardmapsbyshop?pageIndex=1&pageSize=9999&shopId='
 				+ shopId + '&awardName=' + awardName;
 		$.getJSON(listUrl, function(data) {
 			if (data.success) {

@@ -2,7 +2,7 @@ $(function () {
 
 	function getlist(e) {
 		$.ajax({
-			url : "/myo2o/shop/list",
+			url : "/o2o/shop/list",
 			type : "get",
 			dataType : "json",
 			success : function(data) {
@@ -29,7 +29,7 @@ $(function () {
 
 	function goShop(status, id) {
 		if (status != 0 && status != -1) {
-			return '<a href="/myo2o/shop/shopmanage?shopId='+ id +'">进入</a>';
+			return '<a href="/o2o/shop/shopmanage?shopId='+ id +'">进入</a>';
 		} else {
 			return '';
 		}
@@ -48,14 +48,14 @@ $(function () {
 
 	$('#log-out').click(function () {
 		$.ajax({
-			url : "/myo2o/shop/logout",
+			url : "/o2o/shop/logout",
 			type : "post",
 			contentType : false,
 			processData : false,
 			cache : false,
 			success : function(data) {
 				if (data.success) {
-					window.location.href = '/myo2o/shop/ownerlogin';
+					window.location.href = '/o2o/shop/ownerlogin';
 				}
 			},
 			error : function(data, error) {

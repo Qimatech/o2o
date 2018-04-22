@@ -3,7 +3,7 @@
  */
 function getlist(e) {
 	$.ajax({
-		url : "/myo2o/shop/list",
+		url : "/o2o/shop/list",
 		type : "get",
 		dataType : "json",
 		success : function(wholePageData) {
@@ -31,7 +31,7 @@ function listCustomInfo(wholePageData) {
 				.append(
 						$("<div>欢迎您,<font color='#b50606'>" + employee.name
 								+ "</font>"));
-		var url = "/myo2o/shop/changepsw";
+		var url = "/o2o/shop/changepsw";
 		$("#changePassword").attr("href", url);
 	}
 }
@@ -39,7 +39,7 @@ function listShops(e, wholePageData) {
 	var shopList = wholePageData.shopList;
 	if (shopList == undefined || shopList.length <= 0) {
 		var subBuffer = new StringBuffer();
-		subBuffer.append("<div class='increase'><a href=/myo2o/shop/shopedit");
+		subBuffer.append("<div class='increase'><a href=/o2o/shop/shopedit");
 		subBuffer.append(">✚<span>(添加商铺)</span></a></div>");
 		$("#shops").append(subBuffer.toString());
 	}
@@ -50,7 +50,7 @@ function listShops(e, wholePageData) {
 			var shop = shopList[i];
 			if (shop.enableStatus == 0) {
 				subShopBuffer
-						.append("<div><a href='/myo2o/shop/shopedit?shopId=");
+						.append("<div><a href='/o2o/shop/shopedit?shopId=");
 				subShopBuffer.append(shop.shopId);
 				subShopBuffer.append("' style='color: black;' ><del>");
 				subShopBuffer.append(shop.shopName);
@@ -60,7 +60,7 @@ function listShops(e, wholePageData) {
 				subShopBuffer.append('</a></div>');
 			} else if (shop.enableStatus == -1) {
 				subShopBuffer
-						.append("<div><a href='/myo2o/shop/shopmanage?shopId=");
+						.append("<div><a href='/o2o/shop/shopmanage?shopId=");
 				subShopBuffer.append(shop.shopId);
 				subShopBuffer.append("' style='color: black;' ><del>");
 				subShopBuffer.append(shop.shopName);
@@ -70,7 +70,7 @@ function listShops(e, wholePageData) {
 				subShopBuffer.append('</a></div>');
 			} else {
 				subShopBuffer
-						.append("<div><a href='/myo2o/shop/shopmanage?shopId=");
+						.append("<div><a href='/o2o/shop/shopmanage?shopId=");
 				// subShopBuffer.append("<div><a href='myShop.html?shopId=");
 				subShopBuffer.append(shop.shopId);
 				subShopBuffer.append("'>");
@@ -86,14 +86,14 @@ function listShops(e, wholePageData) {
 function registerStaticPageEvent(e) {
 	$("#dologout").click(function() {
 		$.ajax({
-			url : "/myo2o/shop/logout",
+			url : "/o2o/shop/logout",
 			type : "post",
 			contentType : false,
 			processData : false,
 			cache : false,
 			success : function(data) {
 				if (data.success) {
-					window.location.href = '/myo2o/shop/ownerlogin';
+					window.location.href = '/o2o/shop/ownerlogin';
 				}
 			},
 			error : function(data, error) {

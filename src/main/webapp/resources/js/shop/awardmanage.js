@@ -1,8 +1,8 @@
 $(function() {
 	var shopId = 1;
-	var listUrl = '/myo2o/shop/listawardsbyshop?pageIndex=1&pageSize=9999&shopId='
+	var listUrl = '/o2o/shop/listawardsbyshop?pageIndex=1&pageSize=9999&shopId='
 			+ shopId;
-	var deleteUrl = '/myo2o/shop/modifyaward';
+	var deleteUrl = '/o2o/shop/modifyaward';
 
 	function getList() {
 		$.getJSON(listUrl, function(data) {
@@ -85,18 +85,18 @@ $(function() {
 					function(e) {
 						var target = $(e.currentTarget);
 						if (target.hasClass('edit')) {
-							window.location.href = '/myo2o/shop/awardedit?awardId='
+							window.location.href = '/o2o/shop/awardedit?awardId='
 									+ e.currentTarget.dataset.id;
 						} else if (target.hasClass('delete')) {
 							deleteItem(e.currentTarget.dataset.id,
 									e.currentTarget.dataset.status);
 						} else if (target.hasClass('preview')) {
-							window.location.href = '/myo2o/frontend/awarddetail?awardId='
+							window.location.href = '/o2o/frontend/awarddetail?awardId='
 									+ e.currentTarget.dataset.id;
 						}
 					});
 
 	$('#new').click(function() {
-		window.location.href = '/myo2o/shop/awardedit';
+		window.location.href = '/o2o/shop/awardedit';
 	});
 });

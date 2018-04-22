@@ -39,7 +39,7 @@ public class MyAwardController {
 	private PersonInfoService personInfoService;
 	private static String URLPREFIX = "https://open.weixin.qq.com/connect/oauth2/authorize?"
 			+ "appid=wxd7f6c5b8899fba83&"
-			+ "redirect_uri=115.28.159.6/myo2o/shop/exchangeaward&"
+			+ "redirect_uri=47.98.40.34/o2o/shop/exchangeaward&"
 			+ "response_type=code&scope=snsapi_userinfo&state=";
 	private static String URLSUFFIX = "#wechat_redirect";
 

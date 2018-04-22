@@ -1,14 +1,14 @@
 $(function() {
 	var awardId = getQueryString('awardId');
 	var shopId = 1;
-	var infoUrl = '/myo2o/shop/getawardbyid?awardId=' + awardId;
-	var awardPostUrl = '/myo2o/shop/modifyaward';
+	var infoUrl = '/o2o/shop/getawardbyid?awardId=' + awardId;
+	var awardPostUrl = '/o2o/shop/modifyaward';
 	var isEdit = false;
 	if (awardId) {
 		getInfo(awardId);
 		isEdit = true;
 	} else {
-		awardPostUrl = '/myo2o/shop/addaward';
+		awardPostUrl = '/o2o/shop/addaward';
 	}
 
 	$("#pass-date").calendar({

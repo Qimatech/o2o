@@ -1,5 +1,5 @@
 $(function() {
-	var url = '/myo2o/shop/changelocalpwd';
+	var url = '/o2o/shop/changelocalpwd';
 	$('#submit').click(function() {
 		var userName = $('#userName').val();
 		var password = $('#password').val();
@@ -24,7 +24,7 @@ $(function() {
 			success : function(data) {
 				if (data.success) {
 					$.toast('提交成功！');
-					window.location.href = '/myo2o/shop/shoplist';
+					window.location.href = '/o2o/shop/shoplist';
 				} else {
 					$.toast('提交失败！');
 					$('#captcha_img').click();
@@ -34,6 +34,6 @@ $(function() {
 	});
 
 	$('#back').click(function() {
-		window.location.href = '/myo2o/shop/shoplist';
+		window.location.href = '/o2o/shop/shoplist';
 	});
 });

@@ -1,8 +1,8 @@
 $(function() {
 	var shopId = 1;
-	var listUrl = '/myo2o/shop/listproductcategorys?shopId=' + shopId;
-	var addUrl = '/myo2o/shop/addproductcategorys';
-	var deleteUrl = '/myo2o/shop/removeproductcategory';
+	var listUrl = '/o2o/shop/listproductcategorys?shopId=' + shopId;
+	var addUrl = '/o2o/shop/addproductcategorys';
+	var deleteUrl = '/o2o/shop/removeproductcategory';
 
 	$.getJSON(
 					listUrl,

@@ -1,5 +1,5 @@
 $(function() {
-	var bindUrl = '/myo2o/shop/bindlocalauth';
+	var bindUrl = '/o2o/shop/bindlocalauth';
 
 	$('#submit').click(function() {
 		var userName = $('#username').val();
@@ -24,7 +24,7 @@ $(function() {
 			success : function(data) {
 				if (data.success) {
 					$.toast('绑定成功！');
-					window.location.href = '/myo2o/shop/shoplist';
+					window.location.href = '/o2o/shop/shoplist';
 				} else {
 					$.toast('绑定失败！');
 					$('#captcha_img').click();

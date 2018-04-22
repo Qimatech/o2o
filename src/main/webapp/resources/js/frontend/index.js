@@ -1,5 +1,5 @@
 $(function() {
-    var url = '/myo2o/frontend/listmainpageinfo';
+    var url = '/o2o/frontend/listmainpageinfo';
 
     $.getJSON(url, function (data) {
         if (data.success) {
@@ -40,7 +40,7 @@ $(function() {
 
     $('.row').on('click', '.shop-classify', function (e) {
         var shopCategoryId = e.currentTarget.dataset.category;
-        var newUrl = '/myo2o/frontend/shoplist?parentId=' + shopCategoryId;
+        var newUrl = '/o2o/frontend/shoplist?parentId=' + shopCategoryId;
         window.location.href = newUrl;
     });
 

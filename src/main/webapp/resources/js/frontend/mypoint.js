@@ -2,7 +2,7 @@ $(function() {
     var loading = false;
     var maxItems = 999;
     var pageSize = 10;
-    var listUrl = '/myo2o/frontend/listusershopmapsbycustomer';
+    var listUrl = '/o2o/frontend/listusershopmapsbycustomer';
 
     var pageNum = 1;
     var shopName = '';

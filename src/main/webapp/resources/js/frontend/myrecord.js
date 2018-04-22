@@ -3,7 +3,7 @@ $(function() {
 	var maxItems = 20;
 	var pageSize = 10;
 
-	var listUrl = '/myo2o/frontend/listuserproductmapsbycustomer';
+	var listUrl = '/o2o/frontend/listuserproductmapsbycustomer';
 
 	var pageNum = 1;
 	var productName = '';
