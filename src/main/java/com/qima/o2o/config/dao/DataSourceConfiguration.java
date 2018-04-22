@@ -26,15 +26,12 @@ public class DataSourceConfiguration {
 	
 	@Bean(name="dataSource")
 	public ComboPooledDataSource createDataSource() {
-		System.out.println("createDataSource----->");
 		ComboPooledDataSource dataSource = new ComboPooledDataSource();
 		try {
 			dataSource.setDriverClass(jdbcDriver);
 			dataSource.setJdbcUrl(jdbcUrl);
 			dataSource.setUser(DESUtils.getDecryptString(jdbcUsername));
-			System.out.println("dataSource--user-->"+dataSource.getUser());
 			dataSource.setPassword(DESUtils.getDecryptString(jdbcPassword));
-			System.out.println("dataSource--password-->"+dataSource.getPassword());
 			dataSource.setMaxPoolSize(30);
 			dataSource.setMinPoolSize(10);
 			dataSource.setAutoCommitOnClose(false);

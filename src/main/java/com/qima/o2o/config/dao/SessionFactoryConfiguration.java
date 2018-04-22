@@ -18,7 +18,6 @@ public class SessionFactoryConfiguration {
 	
 	@Value("${mybatis_config_file}")
 	public  void setMybatisConfigFile(String mybatisConfigFile) {
-		System.out.println("setMybatisConfigFile----->");
 		SessionFactoryConfiguration.mybatisConfigFile = mybatisConfigFile;
 	}
 	

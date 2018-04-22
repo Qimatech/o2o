@@ -1,9 +1,5 @@
-2018-04-22 21:47:54.634 [main] INFO  com.qima.o2o.dao.AreaDaoTest - Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 119200 (started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
-2018-04-22 21:47:54.635 [main] INFO  com.qima.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
-2018-04-22 21:48:04.992 [main] INFO  com.qima.o2o.dao.AreaDaoTest - Started AreaDaoTest in 10.707 seconds (JVM running for 11.826)
-2018-04-22 21:48:31.950 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 119264 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
-2018-04-22 21:48:31.952 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-04-22 21:48:59.329 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 27.586 seconds (JVM running for 28.684)
-2018-04-22 21:52:31.691 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 119204 (F:\workspaces\qimastsworkspace\o2o\target\classes started by xueqiang in F:\workspaces\qimastsworkspace\o2o)
-2018-04-22 21:52:31.692 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-04-22 21:52:58.359 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 26.89 seconds (JVM running for 27.883)
+2018-04-23 05:09:47.419 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 117372 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-23 05:09:47.444 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-04-23 05:10:27.814 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 122168 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-23 05:10:27.817 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-04-23 05:10:32.007 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 4.494 seconds (JVM running for 5.544)

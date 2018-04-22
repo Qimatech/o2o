@@ -80,7 +80,7 @@
 		</filter>
 	</appender>
 	<!-- 配置日志工程包名、指定最低日志记录级别、是否继承root中的appender -->
-	<logger name="com.qima.o2o" level="${log.level}" additivity="true">
+	<logger name="com.qima.o2o" level="${log.level}" additivity="false">
 		<appender-ref ref="debugAppender"/>
 		<appender-ref ref="infoAppender"/>
 		<appender-ref ref="errorAppender"/>
