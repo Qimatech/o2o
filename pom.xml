@@ -7,7 +7,7 @@
 	<groupId>com.qima</groupId>
 	<artifactId>o2o</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<name>o2o</name>
 	<description>Demo project for Spring Boot</description>

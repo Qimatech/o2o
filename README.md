@@ -2,7 +2,9 @@
 前台登录
 http://localhost:8080/o2o/shop/ownerlogin
 
-
+打包 启动
+java -jar o2o-0.0.1-SNAPSHOT.jar
+java -jar o2o-0.0.1-SNAPSHOT.war
 
 
 
