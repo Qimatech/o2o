@@ -103,27 +103,27 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter implements Applica
 	
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
-		String interceptPath="/shop/**";
-		InterceptorRegistration loginIR = registry.addInterceptor(new ShopLoginInterceptor());
-		loginIR.addPathPatterns(interceptPath);
-		InterceptorRegistration permissionIR = registry.addInterceptor(new ShopPermissionInterceptor());
-		permissionIR.addPathPatterns(interceptPath);
-		
-		/** 配置不拦截的路径**/
-		//shoplist page
-		permissionIR.excludePathPatterns("/shop/list");
-		//permissionIR.excludePathPatterns("");
-		
-		//shopregister page
-		permissionIR.excludePathPatterns("/shop/registershop");
-		permissionIR.excludePathPatterns("");
-		permissionIR.excludePathPatterns("");
-		
-		//shopmanage page
-		permissionIR.excludePathPatterns("");
-		permissionIR.excludePathPatterns("");
-		
-		permissionIR.excludePathPatterns("/superadmin/login");
+//		String interceptPath="/shop/**";
+//		InterceptorRegistration loginIR = registry.addInterceptor(new ShopLoginInterceptor());
+//		loginIR.addPathPatterns(interceptPath);
+//		InterceptorRegistration permissionIR = registry.addInterceptor(new ShopPermissionInterceptor());
+//		permissionIR.addPathPatterns(interceptPath);
+//		
+//		/** 配置不拦截的路径**/
+//		//shoplist page
+//		permissionIR.excludePathPatterns("/shop/list");
+//		//permissionIR.excludePathPatterns("");
+//		
+//		//shopregister page
+//		permissionIR.excludePathPatterns("/shop/registershop");
+//		permissionIR.excludePathPatterns("");
+//		permissionIR.excludePathPatterns("");
+//		
+//		//shopmanage page
+//		permissionIR.excludePathPatterns("");
+//		permissionIR.excludePathPatterns("");
+//		
+//		permissionIR.excludePathPatterns("/superadmin/login");
 	}
 
 }

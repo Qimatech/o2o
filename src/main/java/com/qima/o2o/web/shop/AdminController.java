@@ -27,6 +27,7 @@ public class AdminController {
 
 	@RequestMapping(value = "/ownerlogin")
 	public String ownerLogin(HttpServletRequest request) {
+		System.out.println("ownerlogin-->");
 		return "shop/ownerlogin";
 	}
 
