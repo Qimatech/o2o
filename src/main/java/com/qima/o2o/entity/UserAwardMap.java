@@ -17,6 +17,7 @@ public class UserAwardMap {
 	private PersonInfo user;
 	private Award award;
 	private Shop shop;
+	private PersonInfo operator;
 
 	public Long getUserAwardId() {
 		return userAwardId;
@@ -121,5 +122,15 @@ public class UserAwardMap {
 	public void setShop(Shop shop) {
 		this.shop = shop;
 	}
+
+	public PersonInfo getOperator() {
+		return operator;
+	}
+
+	public void setOperator(PersonInfo operator) {
+		this.operator = operator;
+	}
+	
+	
 
 }
