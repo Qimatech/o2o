@@ -1,11 +1,16 @@
 package com.qima.o2o.web.shop;
 
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,6 +18,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.zxing.client.j2se.MatrixToImageWriter;
+import com.google.zxing.common.BitMatrix;
 import com.qima.o2o.dto.ShopAuthMapExecution;
 import com.qima.o2o.entity.PersonInfo;
 import com.qima.o2o.entity.Shop;
@@ -21,6 +28,7 @@ import com.qima.o2o.enums.ShopAuthMapStateEnum;
 import com.qima.o2o.service.ShopAuthMapService;
 import com.qima.o2o.util.CodeUtil;
 import com.qima.o2o.util.HttpServletRequestUtil;
+import com.qima.o2o.util.ShortNetAddressUtil;
 
 @Controller
 @RequestMapping("/shop")
@@ -202,6 +210,55 @@ public class ShopAuthManagementController {
 			return false;
 		} else {
 			return true;
+		}
+	}
+	
+	private static String urlPrefix;
+	private static String urlMiddle;
+	private static String urlSuffix;
+	private static String authUrl;
+	
+	@Value("${wechat.prefix}")
+	public static void setUrlPrefix(String urlPrefix) {
+		ShopAuthManagementController.urlPrefix = urlPrefix;
+	}
+
+	@Value("wechat.middle")
+	public static void setUrlMiddle(String urlMiddle) {
+		ShopAuthManagementController.urlMiddle = urlMiddle;
+	}
+
+	@Value("wechat.suffix")
+	public static void setUrlSuffix(String urlSuffix) {
+		ShopAuthManagementController.urlSuffix = urlSuffix;
+	}
+
+	@Value("wechat.auth.url")
+	public static void setAuthUrl(String authUrl) {
+		ShopAuthManagementController.authUrl = authUrl;
+	}
+
+	@RequestMapping(value = "/generateqrcode4shopauth", method = RequestMethod.GET)
+	@ResponseBody
+	private void generateQRCode4ShopAuth(HttpServletRequest request,
+			HttpServletResponse response) {
+		Shop shop = (Shop) request.getSession().getAttribute("currentShop");
+		if(shop != null && shop.getShopId() != null) {
+			long timpStamp = System.currentTimeMillis();
+			String content = "{aaashopIdaaa:"+shop.getShopId()+",aaacreateTimeaaa:"+timpStamp+"}";
+			try {
+				String longUrl = urlPrefix + authUrl + urlMiddle + URLEncoder.encode("content", "UTF-8") + urlSuffix;
+				String shortUrl = ShortNetAddressUtil.getShortURL(longUrl);
+				BitMatrix qRcodeImg = CodeUtil.generateQRCodeStream(shortUrl, response);
+				MatrixToImageWriter.writeToStream(qRcodeImg, "png", response.getOutputStream());
+			} catch (UnsupportedEncodingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
 		}
 	}
 }

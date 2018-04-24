@@ -1,36 +1,10 @@
-2018-04-24 04:52:54.709 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 131644 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 04:52:54.716 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-04-24 04:53:08.660 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 15.656 seconds (JVM running for 17.931)
-2018-04-24 05:50:13.242 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Starting AwardDaoTest on DESKTOP-HQB24R0 with PID 123708 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 05:50:13.245 [main] INFO  com.qima.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 05:50:19.621 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Started AwardDaoTest in 6.755 seconds (JVM running for 8.605)
-2018-04-24 05:52:54.491 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Starting AwardDaoTest on DESKTOP-HQB24R0 with PID 124244 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 05:52:54.494 [main] INFO  com.qima.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 05:53:00.730 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Started AwardDaoTest in 6.636 seconds (JVM running for 7.716)
-2018-04-24 05:53:52.700 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Starting AwardDaoTest on DESKTOP-HQB24R0 with PID 127320 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 05:53:52.703 [main] INFO  com.qima.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 05:53:58.651 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Started AwardDaoTest in 6.272 seconds (JVM running for 8.136)
-2018-04-24 05:54:26.623 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Starting AwardDaoTest on DESKTOP-HQB24R0 with PID 126004 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 05:54:26.626 [main] INFO  com.qima.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 05:54:32.794 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Started AwardDaoTest in 6.493 seconds (JVM running for 7.631)
-2018-04-24 05:55:51.116 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Starting AwardDaoTest on DESKTOP-HQB24R0 with PID 124356 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 05:55:51.118 [main] INFO  com.qima.o2o.dao.AwardDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 05:55:57.466 [main] INFO  com.qima.o2o.dao.AwardDaoTest - Started AwardDaoTest in 6.691 seconds (JVM running for 7.894)
-2018-04-24 06:15:59.918 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on DESKTOP-HQB24R0 with PID 131740 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 06:15:59.919 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 06:16:06.552 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 7.006 seconds (JVM running for 8.112)
-2018-04-24 06:20:52.246 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on DESKTOP-HQB24R0 with PID 131408 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 06:20:52.249 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 06:21:18.909 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 27.029 seconds (JVM running for 28.905)
-2018-04-24 06:24:58.111 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on DESKTOP-HQB24R0 with PID 31392 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 06:24:58.112 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 06:25:04.751 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 6.99 seconds (JVM running for 8.544)
-2018-04-24 06:29:30.629 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on DESKTOP-HQB24R0 with PID 124716 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 06:29:30.632 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 06:29:36.668 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 6.372 seconds (JVM running for 7.437)
-2018-04-24 06:33:24.086 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on DESKTOP-HQB24R0 with PID 129120 (started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 06:33:24.086 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
-2018-04-24 06:33:30.169 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 6.641 seconds (JVM running for 8.28)
-2018-04-24 07:17:56.566 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 133464 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-24 07:17:56.634 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-04-24 07:18:05.255 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 9.135 seconds (JVM running for 11.642)
+2018-04-25 04:54:33.558 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - response string:{"tinyurl":"http:\/\/dwz.cn\/5oUj4Y","status":0,"longurl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","err_msg":""}
+2018-04-25 04:54:33.834 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - tinyurl:http://dwz.cn/5oUj4Y
+2018-04-25 04:55:01.090 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - response string:{"tinyurl":"http:\/\/dwz.cn\/5oUj4Y","status":0,"longurl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","err_msg":""}
+2018-04-25 04:55:01.273 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - tinyurl:http://dwz.cn/5oUj4Y
+2018-04-25 04:55:48.500 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - response string:{"tinyurl":"http:\/\/dwz.cn\/5oUj4Y","status":0,"longurl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","err_msg":""}
+2018-04-25 04:56:29.796 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - tinyurl:http://dwz.cn/5oUj4Y
+2018-04-25 05:12:16.098 [main] INFO  com.qima.o2o.util.baidu.ShortNetAddress - response string: {"tinyurl":"http:\/\/dwz.cn\/3l2Nl9","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx2c605206217d88b5&redirect_uri=http://115.28.159.6/cityrun/wechatlogin.action&role_type=1&response_type=code&scope=snsapi_userinfo&state=STATE123qweasd#wechat_redirect","err_msg":""}
+2018-04-25 05:12:16.279 [main] INFO  com.qima.o2o.util.baidu.ShortNetAddress - tinyurl: http://dwz.cn/3l2Nl9
+2018-04-25 05:12:27.088 [main] INFO  com.qima.o2o.util.baidu.ShortNetAddress - response string: {"tinyurl":"http:\/\/dwz.cn\/3l2Nl9","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx2c605206217d88b5&redirect_uri=http://115.28.159.6/cityrun/wechatlogin.action&role_type=1&response_type=code&scope=snsapi_userinfo&state=STATE123qweasd#wechat_redirect","err_msg":""}
+2018-04-25 05:12:27.269 [main] INFO  com.qima.o2o.util.baidu.ShortNetAddress - tinyurl: http://dwz.cn/3l2Nl9
