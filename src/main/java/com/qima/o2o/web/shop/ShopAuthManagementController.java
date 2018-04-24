@@ -137,10 +137,11 @@ public class ShopAuthManagementController {
 		}
 		if (shopAuthMap != null && shopAuthMap.getShopAuthId() != null) {
 			try {
-//				Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
-//				PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
-//				shopAuthMap.setShopId(currentShop.getShopId());
-//				shopAuthMap.setEmployeeId(user.getUserId());
+				Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
+				PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
+				shopAuthMap.setShopId(currentShop.getShopId());
+				shopAuthMap.setEmployeeId(user.getUserId());
+				
 				if(!checkPermission(shopAuthMap.getShopAuthId())) {
 					modelMap.put("success", false);
 					modelMap.put("errMsg", "无法对店家本身权限做操作(已是店铺的最高权限)");
