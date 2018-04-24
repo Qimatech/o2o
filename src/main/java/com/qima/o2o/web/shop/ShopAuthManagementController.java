@@ -137,14 +137,17 @@ public class ShopAuthManagementController {
 		}
 		if (shopAuthMap != null && shopAuthMap.getShopAuthId() != null) {
 			try {
-				Shop currentShop = (Shop) request.getSession().getAttribute(
-						"currentShop");
-				PersonInfo user = (PersonInfo) request.getSession()
-						.getAttribute("user");
-				shopAuthMap.setShopId(currentShop.getShopId());
-				shopAuthMap.setEmployeeId(user.getUserId());
-				ShopAuthMapExecution se = shopAuthMapService
-						.modifyShopAuthMap(shopAuthMap);
+//				Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
+//				PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
+//				shopAuthMap.setShopId(currentShop.getShopId());
+//				shopAuthMap.setEmployeeId(user.getUserId());
+				if(!checkPermission(shopAuthMap.getShopAuthId())) {
+					modelMap.put("success", false);
+					modelMap.put("errMsg", "无法对店家本身权限做操作(已是店铺的最高权限)");
+					return modelMap;
+				}
+				
+				ShopAuthMapExecution se = shopAuthMapService.modifyShopAuthMap(shopAuthMap);
 				if (se.getState() == ShopAuthMapStateEnum.SUCCESS.getState()) {
 					modelMap.put("success", true);
 				} else {
@@ -189,5 +192,15 @@ public class ShopAuthManagementController {
 			modelMap.put("errMsg", "请至少选择一个授权进行删除");
 		}
 		return modelMap;
+	}
+	
+	private boolean checkPermission(Long shopAuthId) {
+		ShopAuthMap grantedPerson = shopAuthMapService.getShopAuthMapById(shopAuthId);
+		if(grantedPerson.getTitleFlag() == 0) {
+			//若是店家本身,不能操作
+			return false;
+		} else {
+			return true;
+		}
 	}
 }

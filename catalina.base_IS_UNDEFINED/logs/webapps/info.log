@@ -31,3 +31,6 @@
 2018-04-24 06:33:24.086 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Starting UserAwardMapDaoTest on DESKTOP-HQB24R0 with PID 129120 (started by xueqiang in G:\Qima\qimagit\o2o)
 2018-04-24 06:33:24.086 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - No active profile set, falling back to default profiles: default
 2018-04-24 06:33:30.169 [main] INFO  com.qima.o2o.dao.UserAwardMapDaoTest - Started UserAwardMapDaoTest in 6.641 seconds (JVM running for 8.28)
+2018-04-24 07:17:56.566 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 133464 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-24 07:17:56.634 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-04-24 07:18:05.255 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 9.135 seconds (JVM running for 11.642)
