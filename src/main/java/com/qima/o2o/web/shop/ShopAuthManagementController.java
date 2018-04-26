@@ -78,8 +78,7 @@ public class ShopAuthManagementController {
 
 	@RequestMapping(value = "/addshopauthmap", method = RequestMethod.POST)
 	@ResponseBody
-	private Map<String, Object> addShopAuthMap(String shopAuthMapStr,
-			HttpServletRequest request) {
+	private Map<String, Object> addShopAuthMap(String shopAuthMapStr,HttpServletRequest request) {
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		ObjectMapper mapper = new ObjectMapper();
 		ShopAuthMap shopAuthMap = null;
@@ -92,10 +91,8 @@ public class ShopAuthManagementController {
 		}
 		if (shopAuthMap != null) {
 			try {
-				Shop currentShop = (Shop) request.getSession().getAttribute(
-						"currentShop");
-				PersonInfo user = (PersonInfo) request.getSession()
-						.getAttribute("user");
+				Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
+				PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
 				if (currentShop.getOwnerId() != user.getUserId()) {
 					modelMap.put("success", false);
 					modelMap.put("errMsg", "无操作权限");
@@ -103,8 +100,7 @@ public class ShopAuthManagementController {
 				}
 				shopAuthMap.setShopId(currentShop.getShopId());
 				shopAuthMap.setEmployeeId(user.getUserId());
-				ShopAuthMapExecution se = shopAuthMapService
-						.addShopAuthMap(shopAuthMap);
+				ShopAuthMapExecution se = shopAuthMapService.addShopAuthMap(shopAuthMap);
 				if (se.getState() == ShopAuthMapStateEnum.SUCCESS.getState()) {
 					modelMap.put("success", true);
 				} else {

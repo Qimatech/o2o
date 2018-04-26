@@ -1,10 +1,10 @@
-2018-04-25 04:54:33.558 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - response string:{"tinyurl":"http:\/\/dwz.cn\/5oUj4Y","status":0,"longurl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","err_msg":""}
-2018-04-25 04:54:33.834 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - tinyurl:http://dwz.cn/5oUj4Y
-2018-04-25 04:55:01.090 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - response string:{"tinyurl":"http:\/\/dwz.cn\/5oUj4Y","status":0,"longurl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","err_msg":""}
-2018-04-25 04:55:01.273 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - tinyurl:http://dwz.cn/5oUj4Y
-2018-04-25 04:55:48.500 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - response string:{"tinyurl":"http:\/\/dwz.cn\/5oUj4Y","status":0,"longurl":"https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login","err_msg":""}
-2018-04-25 04:56:29.796 [main] INFO  com.qima.o2o.util.ShortNetAddressUtil - tinyurl:http://dwz.cn/5oUj4Y
-2018-04-25 05:12:16.098 [main] INFO  com.qima.o2o.util.baidu.ShortNetAddress - response string: {"tinyurl":"http:\/\/dwz.cn\/3l2Nl9","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx2c605206217d88b5&redirect_uri=http://115.28.159.6/cityrun/wechatlogin.action&role_type=1&response_type=code&scope=snsapi_userinfo&state=STATE123qweasd#wechat_redirect","err_msg":""}
-2018-04-25 05:12:16.279 [main] INFO  com.qima.o2o.util.baidu.ShortNetAddress - tinyurl: http://dwz.cn/3l2Nl9
-2018-04-25 05:12:27.088 [main] INFO  com.qima.o2o.util.baidu.ShortNetAddress - response string: {"tinyurl":"http:\/\/dwz.cn\/3l2Nl9","status":0,"longurl":"https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx2c605206217d88b5&redirect_uri=http://115.28.159.6/cityrun/wechatlogin.action&role_type=1&response_type=code&scope=snsapi_userinfo&state=STATE123qweasd#wechat_redirect","err_msg":""}
-2018-04-25 05:12:27.269 [main] INFO  com.qima.o2o.util.baidu.ShortNetAddress - tinyurl: http://dwz.cn/3l2Nl9
+2018-04-26 07:31:42.953 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 142784 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-26 07:31:42.986 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-04-26 07:33:38.997 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 143144 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-26 07:33:38.999 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-04-26 07:34:49.144 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 138568 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-26 07:34:49.175 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-04-26 07:34:54.495 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 5.633 seconds (JVM running for 6.724)
+2018-04-26 07:36:26.981 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 140880 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-26 07:36:26.984 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-04-26 07:36:30.438 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 3.649 seconds (JVM running for 4.91)
