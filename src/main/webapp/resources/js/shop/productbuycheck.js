@@ -11,9 +11,10 @@ $(function() {
                 userProductMapList.map(function (item, index) {
                     tempHtml += ''
                          +      '<div class="row row-productbuycheck">'
-                         +          '<div class="col-33">'+ item.productName +'</div>'
-                         +          '<div class="col-33 productbuycheck-time">'+ item.createTime +'</div>'
-                         +          '<div class="col-33">'+ item.userName +'</div>'
+                         +          '<div class="col-20">'+ item.productName +'</div>'
+                         +          '<div class="col-40 productbuycheck-time">'+ item.createTime +'</div>'
+                         +          '<div class="col-25">'+ item.userName +'</div>'
+                         +          '<div class="col-15">'+ item.point +'</div>'
                          +      '</div>';
                 });
                 $('.productbuycheck-wrap').html(tempHtml);
@@ -21,18 +22,19 @@ $(function() {
         });
     }
 
-    $('#search').on('input', function (e) {
+    /*$('#search').on('input', function (e) {
+        productName = e.target.value;
+        $('.productbuycheck-wrap').empty();
+        getList();
+    });*/
+
+    $('#search').on('change', function (e) {
         productName = e.target.value;
         $('.productbuycheck-wrap').empty();
         getList();
     });
-
+    
     getList();
-
-
-
-
-
 
     var myChart = echarts.init(document.getElementById('chart'));
 
@@ -44,7 +46,7 @@ $(function() {
             }
         },
         legend: {
-            data:['避孕套','麻古','伟哥']
+            data:['茉香奶茶','绿茶拿铁','冰雪奇缘']
         },
         grid: {
             left: '3%',
@@ -65,17 +67,17 @@ $(function() {
         ],
         series : [
             {
-                name:'避孕套',
+                name:'茉香奶茶',
                 type:'bar',
                 data:[120, 132, 101, 134, 290, 230, 220]
             },
             {
-                name:'麻古',
+                name:'绿茶拿铁',
                 type:'bar',
                 data:[60, 72, 71, 74, 190, 130, 110]
             },
             {
-                name:'伟哥',
+                name:'冰雪奇缘',
                 type:'bar',
                 data:[62, 82, 91, 84, 109, 110, 120]
             }
@@ -83,10 +85,5 @@ $(function() {
     };
 
     myChart.setOption(option);
-
-
-
-
-
 
 });

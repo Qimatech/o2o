@@ -22,6 +22,7 @@ import com.qima.o2o.entity.ShopAuthMap;
 import com.qima.o2o.entity.UserProductMap;
 import com.qima.o2o.enums.UserProductMapStateEnum;
 import com.qima.o2o.service.PersonInfoService;
+import com.qima.o2o.service.ProductSellDailyService;
 import com.qima.o2o.service.ProductService;
 import com.qima.o2o.service.ShopAuthMapService;
 import com.qima.o2o.service.UserProductMapService;
@@ -39,27 +40,27 @@ public class UserProductManagementController {
 	private ProductService productService;
 	@Autowired
 	private ShopAuthMapService shopAuthMapService;
+	@Autowired
+	private ProductSellDailyService productSellDailyService;
 
 	@RequestMapping(value = "/listuserproductmapsbyshop", method = RequestMethod.GET)
 	@ResponseBody
-	private Map<String, Object> listUserProductMapsByShop(
-			HttpServletRequest request) {
+	private Map<String, Object> listUserProductMapsByShop(HttpServletRequest request) {
 		Map<String, Object> modelMap = new HashMap<String, Object>();
 		int pageIndex = HttpServletRequestUtil.getInt(request, "pageIndex");
 		int pageSize = HttpServletRequestUtil.getInt(request, "pageSize");
-		Shop currentShop = (Shop) request.getSession().getAttribute(
-				"currentShop");
-		if ((pageIndex > -1) && (pageSize > -1) && (currentShop != null)
-				&& (currentShop.getShopId() != null)) {
+		Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
+		if ((pageIndex > -1) && (pageSize > -1) && (currentShop != null) && (currentShop.getShopId() != null)) {
 			UserProductMap userProductMapCondition = new UserProductMap();
 			userProductMapCondition.setShopId(currentShop.getShopId());
-			String productName = HttpServletRequestUtil.getString(request,
-					"productName");
+			//userProductMapCondition.setShop(currentShop);
+			String productName = HttpServletRequestUtil.getString(request,"productName");
 			if (productName != null) {
+				Product product = new Product();
 				userProductMapCondition.setProductName(productName);
+				userProductMapCondition.setProduct(product);
 			}
-			UserProductMapExecution ue = userProductMapService
-					.listUserProductMap(userProductMapCondition, pageIndex,
+			UserProductMapExecution ue = userProductMapService.listUserProductMap(userProductMapCondition, pageIndex,
 							pageSize);
 			modelMap.put("userProductMapList", ue.getUserProductMapList());
 			modelMap.put("count", ue.getCount());

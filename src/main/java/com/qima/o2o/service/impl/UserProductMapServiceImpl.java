@@ -32,18 +32,13 @@ public class UserProductMapServiceImpl implements UserProductMapService {
 	private ShopDao shopDao;
 
 	@Override
-	public UserProductMapExecution listUserProductMap(
-			UserProductMap userProductCondition, Integer pageIndex,
+	public UserProductMapExecution listUserProductMap(UserProductMap userProductCondition, Integer pageIndex,
 			Integer pageSize) {
-		if (userProductCondition != null && pageIndex != null
-				&& pageSize != null) {
-			int beginIndex = PageCalculator.calculateRowIndex(pageIndex,
-					pageSize);
-			List<UserProductMap> userProductMapList = userProductMapDao
-					.queryUserProductMapList(userProductCondition, beginIndex,
+		if (userProductCondition != null && pageIndex != null && pageSize != null) {
+			int beginIndex = PageCalculator.calculateRowIndex(pageIndex,pageSize);
+			List<UserProductMap> userProductMapList = userProductMapDao.queryUserProductMapList(userProductCondition, beginIndex,
 							pageSize);
-			int count = userProductMapDao
-					.queryUserProductMapCount(userProductCondition);
+			int count = userProductMapDao.queryUserProductMapCount(userProductCondition);
 			UserProductMapExecution se = new UserProductMapExecution();
 			se.setUserProductMapList(userProductMapList);
 			se.setCount(count);
