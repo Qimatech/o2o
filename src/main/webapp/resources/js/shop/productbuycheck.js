@@ -85,5 +85,46 @@ $(function() {
     };
 
     myChart.setOption(option);
+    
+    /* 获取7天销量 */
+    function getProductSellDailyList() {
+    	var listProductSellDailyUrl = '/o2o/shop/listproductselldailyinfobyshop';
+    	
+    	$.getJSON(listProductSellDailyUrl,function(data){
+    		if(data.success) {
+    			var myChart = echarts.init(document.getElementById("chart"));
+    			var option = generateStaticEchartPart();
+    			option.legend.data = data.legendData;
+    			option.xAxis = data.xAxis;
+    			option.series = data.series;
+    			myChart.setOption(option);
+    		}
+    	});
+    }
+    
+    function generateStaticEchartPart() {
+    	var option = {
+    	    tooltip : {
+    	    	trigger:'axis',
+    	    	axisPointer:{
+    	    		type:'shadow'
+    	    	}
+    	    },
+    	    legend:{},
+    	    grid:{
+    	    	left:'3%',
+    	    	right:'4%',
+    	    	bottom:'3%',
+    	    	containLabel:true
+    	    },
+    	    xAxis:[{
+    	    	
+    	    }],
+    	    yAxis:[{
+    	    	
+    	    }]
+    	};
+    	return option;
+    }
 
 });
