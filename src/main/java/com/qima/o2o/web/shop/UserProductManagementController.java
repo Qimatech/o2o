@@ -17,6 +17,7 @@ import com.qima.o2o.dto.ShopAuthMapExecution;
 import com.qima.o2o.dto.UserProductMapExecution;
 import com.qima.o2o.entity.PersonInfo;
 import com.qima.o2o.entity.Product;
+import com.qima.o2o.entity.ProductSellDaily;
 import com.qima.o2o.entity.Shop;
 import com.qima.o2o.entity.ShopAuthMap;
 import com.qima.o2o.entity.UserProductMap;
@@ -43,6 +44,18 @@ public class UserProductManagementController {
 	@Autowired
 	private ProductSellDailyService productSellDailyService;
 
+	@RequestMapping(value = "/listproductselldailyinfobyshop", method = RequestMethod.GET)
+	@ResponseBody
+	private Map<String, Object> listproductselldailyinfobyshop(HttpServletRequest request) {
+		Map<String, Object> modelMap = new HashMap<String, Object>();
+		Shop currentShop = (Shop) request.getSession().getAttribute("currentShop");
+		if ((currentShop != null) && (currentShop.getShopId() != null)) {
+			ProductSellDaily productSellDailyCondition = new ProductSellDaily();
+			
+		}
+		return null;
+		
+	}
 	@RequestMapping(value = "/listuserproductmapsbyshop", method = RequestMethod.GET)
 	@ResponseBody
 	private Map<String, Object> listUserProductMapsByShop(HttpServletRequest request) {

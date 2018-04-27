@@ -496,3 +496,20 @@ INSERT INTO `tb_wechat_auth` VALUES ('4', '8', 'ovLbns-gxJHqC-UTPQKvgEuENl-E', '
 INSERT INTO `tb_wechat_auth` VALUES ('5', '9', 'ovLbns9oD5K4g712TW63dgSHxC3o', '2017-06-04 21:20:43');
 INSERT INTO `tb_wechat_auth` VALUES ('6', '10', 'ovLbnsz16NtYSt2bCoJktXOGlzyg', '2017-06-07 01:36:16');
 INSERT INTO `tb_wechat_auth` VALUES ('7', '11', 'ovLbns4Z7ueIBJNmgVfpDTQQLCRA', '2017-09-18 23:39:38');
+
+
+
+DROP TABLE IF EXISTS `tb_product_sell_daily`;
+CREATE TABLE `tb_product_sell_daily` (
+  `product_sell_daily_id` int(10) NOT NULL AUTO_INCREMENT,
+  `product_id` int(10) NOT NULL,
+  `shop_id` int(10) NOT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `total` int(10),
+  PRIMARY KEY (`product_sell_daily_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+ 
+
+
+

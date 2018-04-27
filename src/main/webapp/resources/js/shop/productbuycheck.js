@@ -35,7 +35,7 @@ $(function() {
     });
     
     getList();
-
+    getProductSellDailyList();
     var myChart = echarts.init(document.getElementById('chart'));
 
     var option = {
