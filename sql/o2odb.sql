@@ -502,10 +502,14 @@ INSERT INTO `tb_wechat_auth` VALUES ('7', '11', 'ovLbns4Z7ueIBJNmgVfpDTQQLCRA', 
 DROP TABLE IF EXISTS `tb_product_sell_daily`;
 CREATE TABLE `tb_product_sell_daily` (
   `product_sell_daily_id` int(10) NOT NULL AUTO_INCREMENT,
-  `product_id` int(10) NOT NULL,
-  `shop_id` int(10) NOT NULL,
+  `product_id` int(100) DEFAULT NULL,
+  `shop_id` int(10) DEFAULT NULL,
   `create_time` datetime DEFAULT NULL,
-  `total` int(10),
+  `total` int(10) DEFAULT '0',
+  KEY `fk_product_sell_product`(`product_id`),
+  KEY `fk_product_sell_shop`(`shop_id`),
+  CONSTRAINT `fk_product_sell_product` FOREIGN KEY(`product_id`) REFERENCES `tb_product`(`product_id`),
+  CONSTRAINT `fk_product_sell_shop` FOREIGN KEY(`shop_id`) REFERENCES `tb_shop`(`shop_id`),
   PRIMARY KEY (`product_sell_daily_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
