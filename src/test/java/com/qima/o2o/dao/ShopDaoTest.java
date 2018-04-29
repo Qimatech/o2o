@@ -2,6 +2,7 @@ package com.qima.o2o.dao;
 
 import java.util.Date;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +22,7 @@ public class ShopDaoTest {
 	private ShopDao shopDao;
 
 	@Test
+	@Ignore
 	public void testInsertShop() {
 		Shop shop = new Shop();
 		PersonInfo owner = new PersonInfo();
@@ -50,6 +52,21 @@ public class ShopDaoTest {
 		shop.setAdvice("审核中");
 		shop.setStaffList(null);
 		int effectedNum =  shopDao.insertShop(shop);
+		System.out.println("effected-->" + effectedNum);
+		
+	}
+	
+	@Test
+	public void testUpdateShop() {
+		Shop shop = new Shop();
+		shop.setShopId(29L);
+		
+		shop.setShopName("美装秀秀专营店");
+		shop.setShopDesc("美装秀秀");
+		shop.setShopAddr("安徽涡阳");
+		shop.setLastEditTime(new Date());
+		
+		int effectedNum =  shopDao.updateShop(shop);
 		System.out.println("effected-->" + effectedNum);
 		
 	}

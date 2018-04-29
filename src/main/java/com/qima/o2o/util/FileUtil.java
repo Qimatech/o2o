@@ -7,8 +7,9 @@ import java.util.Random;
 
 public class FileUtil {
 	private static String seperator = System.getProperty("file.separator");
-	private static final SimpleDateFormat sDateFormat = new SimpleDateFormat(
-			"yyyyMMddHHmmss"); // 时间格式化的格式
+	
+	private static final SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyyMMddHHmmss"); // 时间格式化的格式
+	
 	private static final Random r = new Random();
 
 	public static String getImgBasePath() {
@@ -69,5 +70,9 @@ public class FileUtil {
 			}
 			file.delete();
 		}
+	}
+	
+	public static void main(String[] args) {
+		System.out.println(getRandomFileName());
 	}
 }

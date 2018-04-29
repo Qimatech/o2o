@@ -5,11 +5,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.imageio.ImageIO;
+
 import net.coobird.thumbnailator.Thumbnails;
+import net.coobird.thumbnailator.geometry.Positions;
 
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 public class ImageUtil {
+	private static String basePath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+
 	public static String generateThumbnail(CommonsMultipartFile thumbnail, String targetAddr) {
 		String realFileName = FileUtil.getRandomFileName();
 		String extension = getFileExtension(thumbnail);
@@ -17,7 +22,9 @@ public class ImageUtil {
 		String relativeAddr = targetAddr + realFileName + extension;
 		File dest = new File(FileUtil.getImgBasePath() + relativeAddr);
 		try {
-			Thumbnails.of(thumbnail.getInputStream()).size(200, 200).outputQuality(0.25f).toFile(dest);
+			Thumbnails.of(thumbnail.getInputStream()).size(200, 200)
+					.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
+					.outputQuality(0.8f).toFile(dest);
 		} catch (IOException e) {
 			throw new RuntimeException("创建缩略图失败：" + e.toString());
 		}
@@ -71,5 +78,12 @@ public class ImageUtil {
 	private static String getFileExtension(CommonsMultipartFile cFile) {
 		String originalFileName = cFile.getOriginalFilename();
 		return originalFileName.substring(originalFileName.lastIndexOf("."));
+	}
+
+	public static void main(String[] args) throws IOException {
+
+		Thumbnails.of(new File("G:/Qima/qimagit/o2o/src/main/resources/watermark.jpg")).size(200, 200)
+				.watermark(Positions.BOTTOM_RIGHT, ImageIO.read(new File(basePath + "/watermark.jpg")), 0.25f)
+				.outputQuality(0.8f).toFile("G:/Qima/qimagit/o2o/src/main/resources/watermarknew.jpg");
 	}
 }

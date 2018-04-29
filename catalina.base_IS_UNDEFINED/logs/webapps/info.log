@@ -66,3 +66,39 @@
 2018-04-29 12:22:02.520 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 150508 (started by xueqiang in G:\Qima\qimagit\o2o)
 2018-04-29 12:22:02.539 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
 2018-04-29 12:22:08.208 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 6.409 seconds (JVM running for 7.517)
+2018-04-29 12:25:45.057 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 168100 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:25:45.058 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:25:51.539 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 6.849 seconds (JVM running for 8.015)
+2018-04-29 12:30:05.944 [main] INFO  com.qima.o2o.dao.AreaDaoTest - Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 159736 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:30:05.946 [main] INFO  com.qima.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:30:12.269 [main] INFO  com.qima.o2o.dao.AreaDaoTest - Started AreaDaoTest in 6.685 seconds (JVM running for 7.877)
+2018-04-29 12:33:38.028 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 9804 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:33:38.029 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:33:44.642 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 7.026 seconds (JVM running for 8.183)
+2018-04-29 12:36:39.673 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 168808 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:36:39.676 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:36:52.005 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 12.788 seconds (JVM running for 14.605)
+2018-04-29 12:38:13.743 [main] INFO  com.qima.o2o.dao.AreaDaoTest - Starting AreaDaoTest on DESKTOP-HQB24R0 with PID 166924 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:38:13.745 [main] INFO  com.qima.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:38:25.544 [main] INFO  com.qima.o2o.dao.AreaDaoTest - Started AreaDaoTest in 12.193 seconds (JVM running for 14.143)
+2018-04-29 12:43:01.820 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 157320 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:43:01.822 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:43:10.964 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 9.538 seconds (JVM running for 10.614)
+2018-04-29 12:52:15.002 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 167812 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:52:15.003 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:52:21.772 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 7.167 seconds (JVM running for 8.302)
+2018-04-29 12:54:43.751 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 169508 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:54:43.752 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:54:50.410 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 7.016 seconds (JVM running for 8.137)
+2018-04-29 12:55:43.182 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 169832 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:55:43.183 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:55:49.698 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 6.87 seconds (JVM running for 8.097)
+2018-04-29 12:58:33.352 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 166696 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 12:58:33.352 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 12:58:40.228 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 7.214 seconds (JVM running for 8.523)
+2018-04-29 13:00:35.541 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 168984 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 13:00:35.542 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 13:00:41.633 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 6.437 seconds (JVM running for 7.511)
+2018-04-29 20:47:28.701 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Starting ShopDaoTest on DESKTOP-HQB24R0 with PID 171080 (started by xueqiang in G:\Qima\qimagit\o2o)
+2018-04-29 20:47:28.718 [main] INFO  com.qima.o2o.dao.ShopDaoTest - No active profile set, falling back to default profiles: default
+2018-04-29 20:47:36.906 [main] INFO  com.qima.o2o.dao.ShopDaoTest - Started ShopDaoTest in 8.896 seconds (JVM running for 10.297)
