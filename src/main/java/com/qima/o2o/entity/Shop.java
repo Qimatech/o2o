@@ -22,7 +22,9 @@ public class Shop {
 	private String advice;
 
 	private List<ShopAuthMap> staffList;
+	private Long areaId;
 	private Area area;
+	private PersonInfo owner;
 	private ShopCategory shopCategory;
 	private ShopCategory parentCategory;
 
@@ -182,4 +184,21 @@ public class Shop {
 		this.parentCategory = parentCategory;
 	}
 
+	public PersonInfo getOwner() {
+		return owner;
+	}
+
+	public void setOwner(PersonInfo owner) {
+		this.owner = owner;
+	}
+
+	public Long getAreaId() {
+		return areaId;
+	}
+
+	public void setAreaId(Long areaId) {
+		this.areaId = areaId;
+	}
+
+	
 }

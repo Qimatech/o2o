@@ -19,6 +19,22 @@
 		<result column="last_edit_time" property="lastEditTime" />
 		<result column="enable_status" property="enableStatus" />
 		<result column="advice" property="advice" />
+		<association property="owner" column="ower_id"
+			javaType="com.qima.o2o.entity.PersonInfo">
+			<id column="user_id" property="userId" />
+			<result column="name" property="name" />
+			<result column="birthday" property="birthday" />
+			<result column="gender" property="gender" />
+			<result column="phone" property="phone" />
+			<result column="email" property="email" />
+			<result column="profile_img" property="profileImg" />
+			<result column="customer_flag" property="customerFlag" />
+			<result column="shop_owner_flag" property="shopOwnerFlag" />
+			<result column="admin_flag" property="adminFlag" />
+			<result column="create_time" property="createTime" />
+			<result column="last_edit_time" property="lastEditTime" />
+			<result column="enable_status" property="enableStatus" />
+		</association>
 		<association property="area" column="area_id"
 			javaType="com.qima.o2o.entity.Area">
 			<id column="area_id" property="areaId" />
@@ -28,21 +44,26 @@
 			<result column="create_time" property="createTime" />
 			<result column="last_edit_time" property="lastEditTime" />
 		</association>
-		<association property="shopCategory" column="shop_category_id"
-			javaType="com.qima.o2o.entity.ShopCategory">
+		<association property="shopCategory"
+			column="shop_category_id" javaType="com.qima.o2o.entity.ShopCategory">
 			<id column="shop_category_id" property="shopCategoryId" />
-			<result column="shop_category_name" property="shopCategoryName" />
-			<result column="shop_category_desc" property="shopCategoryDesc" />
+			<result column="shop_category_name"
+				property="shopCategoryName" />
+			<result column="shop_category_desc"
+				property="shopCategoryDesc" />
 			<result column="shop_category_img" property="shopCategoryImg" />
 			<result column="priority" property="priority" />
 			<result column="create_time" property="createTime" />
 			<result column="last_edit_time" property="lastEditTime" />
 		</association>
-		<association property="parentCategory" column="parent_category_id"
+		<association property="parentCategory"
+			column="parent_category_id"
 			javaType="com.qima.o2o.entity.ShopCategory">
 			<id column="parent_category_id" property="shopCategoryId" />
-			<result column="shop_category_name" property="shopCategoryName" />
-			<result column="shop_category_desc" property="shopCategoryDesc" />
+			<result column="shop_category_name"
+				property="shopCategoryName" />
+			<result column="shop_category_desc"
+				property="shopCategoryDesc" />
 			<result column="shop_category_img" property="shopCategoryImg" />
 			<result column="priority" property="priority" />
 			<result column="create_time" property="createTime" />
@@ -183,7 +204,8 @@
 		p.employee_id =
 		#{employeeId}
 	</select>
-	<select id="queryByShopId" resultMap="shopMap" parameterType="Long">
+	<select id="queryByShopId" resultMap="shopMap"
+		parameterType="Long">
 		<!-- 具体的sql -->
 		SELECT
 		shop_id,
@@ -208,19 +230,12 @@
 		WHERE
 		shop_id = #{shopId}
 	</select>
-	<insert id="insertShop" useGeneratedKeys="true" keyProperty="shopId"
-		keyColumn="shop_id">
+	<insert id="insertShop" useGeneratedKeys="true"
+		keyProperty="shopId" keyColumn="shop_id">
 		<!-- 具体的sql -->
 		INSERT INTO
-		tb_shop(owner_id,area_id,shop_category_id,parent_category_id,
-		shop_name,shop_desc,shop_addr,phone,shop_img,
-		longitude,latitude,create_time,last_edit_time,
-		enable_status,advice)
-		VALUES
-		(#{ownerId},#{area.areaId},#{shopCategory.shopCategoryId},#{parentCategory.shopCategoryId},
-		#{shopName},#{shopDesc},#{shopAddr},#{phone},#{shopImg},
-		#{longitude},#{latitude},#{createTime},#{lastEditTime},
-		#{enableStatus},#{advice})
+		tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,parent_category_id,longitude,latitude,priority,create_time,last_edit_time,enable_status,advice)
+		VALUES(#{owner.ownerId},#{area.areaId},#{shopCategory.shopCategoryId},#{parentCategory.shopCategoryId},#{shopName},#{shopDesc},#{shopAddr},#{phone},#{shopImg},#{longitude},#{latitude},#{priority},#{createTime},#{lastEditTime},#{enableStatus},#{advice})
 	</insert>
 	<update id="updateShop" parameterType="com.qima.o2o.entity.Shop">
 		update tb_shop
