@@ -6,8 +6,9 @@ http://localhost:8080/o2o/shop/shopmanage
 商店管理
 http://localhost:8080/o2o/shop/shopmanage?shopId=20
 
-
-
+后台登录
+http://localhost:8080/o2o/superadmin/login
+qimaadmin/admin
 
 打包 启动
 java -jar o2o-0.0.1-SNAPSHOT.jar

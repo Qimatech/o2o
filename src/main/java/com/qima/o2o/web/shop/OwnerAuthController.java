@@ -82,16 +82,13 @@ public class OwnerAuthController {
 		}
 		ObjectMapper mapper = new ObjectMapper();
 		LocalAuth localAuth = null;
-		String localAuthStr = HttpServletRequestUtil.getString(request,
-				"localAuthStr");
+		String localAuthStr = HttpServletRequestUtil.getString(request,"localAuthStr");
 		MultipartHttpServletRequest multipartRequest = null;
 		CommonsMultipartFile profileImg = null;
-		CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(
-				request.getSession().getServletContext());
+		CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver(request.getSession().getServletContext());
 		if (multipartResolver.isMultipart(request)) {
 			multipartRequest = (MultipartHttpServletRequest) request;
-			profileImg = (CommonsMultipartFile) multipartRequest
-					.getFile("thumbnail");
+			profileImg = (CommonsMultipartFile) multipartRequest.getFile("thumbnail");
 		} else {
 			modelMap.put("success", false);
 			modelMap.put("errMsg", "上传图片不能为空");
@@ -107,15 +104,14 @@ public class OwnerAuthController {
 		if (localAuth != null && localAuth.getPassword() != null
 				&& localAuth.getUserName() != null) {
 			try {
-				PersonInfo user = (PersonInfo) request.getSession()
-						.getAttribute("user");
+				PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
 				if (user != null && localAuth.getPersonInfo() != null) {
 					localAuth.getPersonInfo().setUserId(user.getUserId());
 				}
 				localAuth.getPersonInfo().setShopOwnerFlag(1);
 				localAuth.getPersonInfo().setAdminFlag(0);
-				LocalAuthExecution le = localAuthService.register(localAuth,
-						profileImg);
+				localAuth.getPersonInfo().setCustomerFlag(0);
+				LocalAuthExecution le = localAuthService.register(localAuth,profileImg);
 				if (le.getState() == LocalAuthStateEnum.SUCCESS.getState()) {
 					modelMap.put("success", true);
 				} else {
@@ -146,8 +142,7 @@ public class OwnerAuthController {
 		}
 		String userName = HttpServletRequestUtil.getString(request, "userName");
 		String password = HttpServletRequestUtil.getString(request, "password");
-		PersonInfo user = (PersonInfo) request.getSession()
-				.getAttribute("user");
+		PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
 		if (userName != null && password != null && user != null
 				&& user.getUserId() != null) {
 			password = MD5.getMd5(password);
@@ -155,8 +150,7 @@ public class OwnerAuthController {
 			localAuth.setUserName(userName);
 			localAuth.setPassword(password);
 			localAuth.setUserId(user.getUserId());
-			LocalAuthExecution le = localAuthService
-					.bindLocalAuth(localAuth);
+			LocalAuthExecution le = localAuthService.bindLocalAuth(localAuth);
 			if (le.getState() == LocalAuthStateEnum.SUCCESS.getState()) {
 				modelMap.put("success", true);
 			} else {

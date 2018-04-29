@@ -39,8 +39,7 @@ public class LocalAuthServiceImpl implements LocalAuthService {
 
 	@Override
 	@Transactional
-	public LocalAuthExecution register(LocalAuth localAuth,
-			CommonsMultipartFile profileImg) throws RuntimeException {
+	public LocalAuthExecution register(LocalAuth localAuth,CommonsMultipartFile profileImg) throws RuntimeException {
 		if (localAuth == null || localAuth.getPassword() == null
 				|| localAuth.getUserName() == null) {
 			return new LocalAuthExecution(LocalAuthStateEnum.NULL_AUTH_INFO);
@@ -58,14 +57,12 @@ public class LocalAuthServiceImpl implements LocalAuthService {
 					try {
 						addProfileImg(localAuth, profileImg);
 					} catch (Exception e) {
-						throw new RuntimeException("addUserProfileImg error: "
-								+ e.getMessage());
+						throw new RuntimeException("addUserProfileImg error: " + e.getMessage());
 					}
 				}
 				try {
 					PersonInfo personInfo = localAuth.getPersonInfo();
-					int effectedNum = personInfoDao
-							.insertPersonInfo(personInfo);
+					int effectedNum = personInfoDao.insertPersonInfo(personInfo);
 					localAuth.setUserId(personInfo.getUserId());
 					if (effectedNum <= 0) {
 						throw new RuntimeException("添加用户信息失败");
@@ -75,6 +72,7 @@ public class LocalAuthServiceImpl implements LocalAuthService {
 							+ e.getMessage());
 				}
 			}
+			
 			int effectedNum = localAuthDao.insertLocalAuth(localAuth);
 			if (effectedNum <= 0) {
 				throw new RuntimeException("帐号创建失败");
@@ -110,8 +108,7 @@ public class LocalAuthServiceImpl implements LocalAuthService {
 			if (effectedNum <= 0) {
 				throw new RuntimeException("帐号绑定失败");
 			} else {
-				return new LocalAuthExecution(LocalAuthStateEnum.SUCCESS,
-						localAuth);
+				return new LocalAuthExecution(LocalAuthStateEnum.SUCCESS,localAuth);
 			}
 		} catch (Exception e) {
 			throw new RuntimeException("insertLocalAuth error: "
