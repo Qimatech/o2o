@@ -204,8 +204,7 @@ public class ShopManagementController {
 				request.getSession().getServletContext());
 		if (multipartResolver.isMultipart(request)) {
 			multipartRequest = (MultipartHttpServletRequest) request;
-			shopImg = (CommonsMultipartFile) multipartRequest
-					.getFile("shopImg");
+			shopImg = (CommonsMultipartFile) multipartRequest.getFile("shopImg");
 		} else {
 			modelMap.put("success", false);
 			modelMap.put("errMsg", "上传图片不能为空");
@@ -220,16 +219,14 @@ public class ShopManagementController {
 		}
 		if (shop != null && shopImg != null) {
 			try {
-				PersonInfo user = (PersonInfo) request.getSession()
-						.getAttribute("user");
+				PersonInfo user = (PersonInfo) request.getSession().getAttribute("user");
 				shop.setOwnerId(user.getUserId());
 				ShopExecution se = shopService.addShop(shop, shopImg);
 				if (se.getState() == ShopStateEnum.CHECK.getState()) {
 					modelMap.put("success", true);
 					// 若shop创建成功，则加入session中，作为权限使用
 					@SuppressWarnings("unchecked")
-					List<Shop> shopList = (List<Shop>) request.getSession()
-							.getAttribute("shopList");
+					List<Shop> shopList = (List<Shop>) request.getSession().getAttribute("shopList");
 					if (shopList != null && shopList.size() > 0) {
 						shopList.add(se.getShop());
 						request.getSession().setAttribute("shopList", shopList);
