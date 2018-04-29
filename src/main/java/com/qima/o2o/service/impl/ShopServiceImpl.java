@@ -16,6 +16,7 @@ import com.qima.o2o.entity.Shop;
 import com.qima.o2o.entity.ShopAuthMap;
 import com.qima.o2o.entity.ShopCategory;
 import com.qima.o2o.enums.ShopStateEnum;
+import com.qima.o2o.exceptions.ShopOperationException;
 import com.qima.o2o.service.ShopService;
 import com.qima.o2o.util.FileUtil;
 import com.qima.o2o.util.ImageUtil;
@@ -49,7 +50,7 @@ public class ShopServiceImpl implements ShopService {
 
 	@Override
 	public ShopExecution getByEmployeeId(long employeeId)
-			throws RuntimeException {
+			throws ShopOperationException {
 		List<Shop> shopList = shopDao.queryByEmployeeId(employeeId);
 		ShopExecution se = new ShopExecution();
 		se.setShopList(shopList);
@@ -69,7 +70,7 @@ public class ShopServiceImpl implements ShopService {
 	 * 2.保证事务方法的执行时间尽可能短，不要穿插其他网络操作，RPC/HTTP请求或者剥离到事务方法外部
 	 * 3.不是所有的方法都需要事务，如只有一条修改操作，只读操作不需要事务控制
 	 */
-	public ShopExecution addShop(Shop shop, CommonsMultipartFile shopImg) throws RuntimeException {
+	public ShopExecution addShop(Shop shop, CommonsMultipartFile shopImg) throws ShopOperationException {
 		if (shop == null) {
 			return new ShopExecution(ShopStateEnum.NULL_SHOP_INFO);
 		}
@@ -87,18 +88,18 @@ public class ShopServiceImpl implements ShopService {
 			}
 			int effectedNum = shopDao.insertShop(shop);
 			if (effectedNum <= 0) {
-				throw new RuntimeException("店铺创建失败");
+				throw new ShopOperationException("店铺创建失败");
 			} else {
 				try {
 					if (shopImg != null) {
 						addShopImg(shop, shopImg);
 						effectedNum = shopDao.updateShop(shop);
 						if (effectedNum <= 0) {
-							throw new RuntimeException("创建图片地址失败");
+							throw new ShopOperationException("创建图片地址失败");
 						}
 					}
 				} catch (Exception e) {
-					throw new RuntimeException("addShopImg error: " + e.getMessage());
+					throw new ShopOperationException("addShopImg error: " + e.getMessage());
 				}
 				// 执行增加shopAuthMap操作
 				ShopAuthMap shopAuthMap = new ShopAuthMap();
@@ -113,24 +114,24 @@ public class ShopServiceImpl implements ShopService {
 				try {
 					effectedNum = shopAuthMapDao.insertShopAuthMap(shopAuthMap);
 					if (effectedNum <= 0) {
-						throw new RuntimeException("授权创建失败");
+						throw new ShopOperationException("授权创建失败");
 					} else {// 创建成功
 						return new ShopExecution(ShopStateEnum.CHECK, shop);
 					}
 				} catch (Exception e) {
-					throw new RuntimeException("insertShopAuthMap error: " + e.getMessage());
+					throw new ShopOperationException("insertShopAuthMap error: " + e.getMessage());
 				}
 
 			}
 		} catch (Exception e) {
-			throw new RuntimeException("insertShop error: " + e.getMessage());
+			throw new ShopOperationException("insertShop error: " + e.getMessage());
 		}
 	}
 
 	@Override
 	@Transactional
 	public ShopExecution modifyShop(Shop shop, CommonsMultipartFile shopImg)
-			throws RuntimeException {
+			throws ShopOperationException {
 		if (shop == null || shop.getShopId() == null) {
 			return new ShopExecution(ShopStateEnum.NULL_SHOPID);
 		} else {
@@ -151,7 +152,7 @@ public class ShopServiceImpl implements ShopService {
 					return new ShopExecution(ShopStateEnum.SUCCESS, shop);
 				}
 			} catch (Exception e) {
-				throw new RuntimeException("modifyShop error: " + e.getMessage());
+				throw new ShopOperationException("modifyShop error: " + e.getMessage());
 			}
 		}
 	}

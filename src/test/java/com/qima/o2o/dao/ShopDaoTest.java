@@ -57,6 +57,7 @@ public class ShopDaoTest {
 	}
 	
 	@Test
+	@Ignore
 	public void testUpdateShop() {
 		Shop shop = new Shop();
 		shop.setShopId(29L);
