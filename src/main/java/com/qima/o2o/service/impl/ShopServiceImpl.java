@@ -64,12 +64,12 @@ public class ShopServiceImpl implements ShopService {
 	@Override
 	@Transactional
 	/**
-	 * 使用注解控制事务方法的优点： 1.开发团队达成一致约定，明确标注事务方法的编程风格
+	 * 使用注解控制事务方法的优点： 
+	 * 1.开发团队达成一致约定，明确标注事务方法的编程风格
 	 * 2.保证事务方法的执行时间尽可能短，不要穿插其他网络操作，RPC/HTTP请求或者剥离到事务方法外部
 	 * 3.不是所有的方法都需要事务，如只有一条修改操作，只读操作不需要事务控制
 	 */
-	public ShopExecution addShop(Shop shop, CommonsMultipartFile shopImg)
-			throws RuntimeException {
+	public ShopExecution addShop(Shop shop, CommonsMultipartFile shopImg) throws RuntimeException {
 		if (shop == null) {
 			return new ShopExecution(ShopStateEnum.NULL_SHOP_INFO);
 		}
@@ -78,8 +78,7 @@ public class ShopServiceImpl implements ShopService {
 			shop.setCreateTime(new Date());
 			shop.setLastEditTime(new Date());
 			if (shop.getShopCategory() != null) {
-				Long shopCategoryId = shop.getShopCategory()
-						.getShopCategoryId();
+				Long shopCategoryId = shop.getShopCategory().getShopCategoryId();
 				ShopCategory sc = new ShopCategory();
 				sc = shopCategoryDao.queryShopCategoryById(shopCategoryId);
 				ShopCategory parentCategory = new ShopCategory();
@@ -99,8 +98,7 @@ public class ShopServiceImpl implements ShopService {
 						}
 					}
 				} catch (Exception e) {
-					throw new RuntimeException("addShopImg error: "
-							+ e.getMessage());
+					throw new RuntimeException("addShopImg error: " + e.getMessage());
 				}
 				// 执行增加shopAuthMap操作
 				ShopAuthMap shopAuthMap = new ShopAuthMap();
@@ -120,8 +118,7 @@ public class ShopServiceImpl implements ShopService {
 						return new ShopExecution(ShopStateEnum.CHECK, shop);
 					}
 				} catch (Exception e) {
-					throw new RuntimeException("insertShopAuthMap error: "
-							+ e.getMessage());
+					throw new RuntimeException("insertShopAuthMap error: " + e.getMessage());
 				}
 
 			}
@@ -154,8 +151,7 @@ public class ShopServiceImpl implements ShopService {
 					return new ShopExecution(ShopStateEnum.SUCCESS, shop);
 				}
 			} catch (Exception e) {
-				throw new RuntimeException("modifyShop error: "
-						+ e.getMessage());
+				throw new RuntimeException("modifyShop error: " + e.getMessage());
 			}
 		}
 	}
