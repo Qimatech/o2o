@@ -20,8 +20,8 @@ public class AreaDaoTest  {
 	public void testQueryArea() {
 		//List<Area> areaList = areaDao.queryArea();
 		Area area = new Area();
-		area.setAreaName("北京1");
-		area.setAreaDesc("北京des1c");
+		area.setAreaName("北京13");
+		area.setAreaDesc("北京des13c");
 		area.setCreateTime(new Date());
 		area.setLastEditTime(new Date());
 		area.setPriority(2);

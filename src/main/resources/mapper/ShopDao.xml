@@ -235,7 +235,7 @@
 		<!-- 具体的sql -->
 		INSERT INTO
 		tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,parent_category_id,longitude,latitude,priority,create_time,last_edit_time,enable_status,advice)
-		VALUES(#{owner.ownerId},#{area.areaId},#{shopCategory.shopCategoryId},#{parentCategory.shopCategoryId},#{shopName},#{shopDesc},#{shopAddr},#{phone},#{shopImg},#{longitude},#{latitude},#{priority},#{createTime},#{lastEditTime},#{enableStatus},#{advice})
+		VALUES(#{owner.ownerId},#{area.areaId},#{shopCategory.shopCategoryId},#{shopName},#{shopDesc},#{shopAddr},#{phone},#{shopImg},#{parentCategory.shopCategoryId},#{longitude},#{latitude},#{priority},#{createTime},#{lastEditTime},#{enableStatus},#{advice})
 	</insert>
 	<update id="updateShop" parameterType="com.qima.o2o.entity.Shop">
 		update tb_shop

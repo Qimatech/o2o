@@ -5,6 +5,7 @@ import java.util.Date;
 public class PersonInfo {
 
 	private Long userId;
+	private Long ownerId;
 	private String name;
 	private Date birthday;
 	private String gender;
@@ -17,6 +18,14 @@ public class PersonInfo {
 	private Date createTime;
 	private Date lastEditTime;
 	private Integer enableStatus;
+
+	public Long getOwnerId() {
+		return ownerId;
+	}
+
+	public void setOwnerId(Long ownerId) {
+		this.ownerId = ownerId;
+	}
 
 	public Long getUserId() {
 		return userId;
