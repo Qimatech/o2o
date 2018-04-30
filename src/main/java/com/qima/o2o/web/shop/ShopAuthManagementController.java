@@ -1,4 +1,4 @@
-package com.qima.o2o.web.shop;
+`package com.qima.o2o.web.shop;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
