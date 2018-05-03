@@ -9,5 +9,6 @@ public class O2oApplication {
 	public static void main(String[] args) {
 		System.out.println("----o2o1---->");
 		SpringApplication.run(O2oApplication.class, args);
+		System.out.println("----o2o1---->");
 	}
 }
