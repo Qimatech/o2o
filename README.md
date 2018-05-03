@@ -15,8 +15,10 @@ java -jar o2o-0.0.1-SNAPSHOT.jar
 java -jar o2o-0.0.1-SNAPSHOT.war
 
 
+
 o2o2--o2o2---->o2o2
 
+o2o1-->o2o1-----o2o1
 
 
 
