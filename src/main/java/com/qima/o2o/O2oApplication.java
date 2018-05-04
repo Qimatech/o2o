@@ -12,5 +12,9 @@ public class O2oApplication {
 		SpringApplication.run(O2oApplication.class, args);
 		System.out.println("o2o2---->");
 		System.out.println("----o2o1---->");
+		
+		
+		System.out.println("o2o2------>");
+		System.out.println("o2o2------>");
 	}
 }
