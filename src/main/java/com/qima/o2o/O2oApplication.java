@@ -16,5 +16,7 @@ public class O2oApplication {
 		
 		System.out.println("o2o2------>");
 		System.out.println("o2o2------>");
+		System.out.println("----o2o1---->");
+		System.out.println("----o2o1---->");
 	}
 }
