@@ -8,7 +8,8 @@ public class O2oApplication {
 
 	public static void main(String[] args) {
 		///-------------
+		
 		SpringApplication.run(O2oApplication.class, args);
-		//----------o2o2
+		//----------o2o2222222222222
 	}
 }
