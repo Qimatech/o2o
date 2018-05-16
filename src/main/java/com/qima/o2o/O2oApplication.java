@@ -10,5 +10,6 @@ public class O2oApplication {
 		///-------------
 		SpringApplication.run(O2oApplication.class, args);
 		//---------11111
+		//----------o2o2222222222222
 	}
 }
