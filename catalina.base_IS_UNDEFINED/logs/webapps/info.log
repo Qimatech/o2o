@@ -1,6 +1,4 @@
-2018-04-30 05:53:16.754 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 165720 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-30 05:53:16.764 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-04-30 05:53:24.119 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 7.939 seconds (JVM running for 9.574)
-2018-04-30 06:13:16.606 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 171920 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
-2018-04-30 06:13:16.608 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
-2018-04-30 06:13:20.446 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 4.026 seconds (JVM running for 5.025)
+2018-05-01 09:46:32.803 [main] INFO  com.qima.o2o.O2oApplication - Starting O2oApplication on DESKTOP-HQB24R0 with PID 191292 (G:\Qima\qimagit\o2o\target\classes started by xueqiang in G:\Qima\qimagit\o2o)
+2018-05-01 09:46:32.809 [main] INFO  com.qima.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2018-05-01 09:46:44.057 [main] INFO  com.qima.o2o.O2oApplication - Started O2oApplication in 12.567 seconds (JVM running for 15.409)
+2018-05-01 10:02:35.566 [http-nio-8080-exec-2] INFO  com.qima.o2o.util.ShortNetAddressUtil - response string:{"status":-1,"err_msg":"您输入的网址不存在，请重新输入","longurl":"http://nullnullnullcontentnull"}
